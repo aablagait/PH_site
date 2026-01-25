@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотограф — портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+
+  <img class="hero-image active" src="img/thumbs/hero/1.jpg" alt="">
+  <img class="hero-image" src="img/thumbs/hero/2.jpg" alt="">
+  <img class="hero-image" src="img/thumbs/hero/3.jpg" alt="">
+  <img class="hero-image" src="img/thumbs/hero/4.jpg" alt="">
+
+  <div class="hero-controls">
+  <span class="hero-prev">←</span>
+  <span class="hero-counter">1 / 4</span>
+  <span class="hero-next">→</span>
+  </div>
+
+
+  <div class="hero-content">
+    <h1>Имя Фамилия</h1>
+    <p>Фотограф. Портреты. Город. Свет.</p>
+  </div>
+</header>
+
+
+<main>
+
+<section class="portfolio">
+  <div class="portfolio-grid">
+
+    <!-- PORTRAITS -->
+    <section class="category">
+      <h2>Портреты (студия)</h2>
+      <div class="main-photo">
+        <img src="img/thumbs/portraits/1.jpg" data-full="img/full/portraits/1.jpg" alt="">
+      </div>
+      <div class="thumbs">
+        <img src="img/thumbs/portraits/1.jpg" data-full="img/full/portraits/2.jpg" alt="">
+        <img src="img/thumbs/portraits/2.jpg" data-full="img/full/portraits/2.jpg" alt="">
+        <img src="img/thumbs/portraits/3.jpg" data-full="img/full/portraits/3.jpg" alt="">
+        <img src="img/thumbs/portraits/4.jpg" data-full="img/full/portraits/4.jpg" alt="">
+        <img src="img/thumbs/portraits/5.jpg" data-full="img/full/portraits/5.jpg" alt="">
+        <img src="img/thumbs/portraits/6.jpg" data-full="img/full/portraits/6.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- ADVENTURE -->
+    <section class="category">
+      <h2>Путешествия</h2>
+      <div class="main-photo">
+        <img src="img/thumbs/adventure/1.jpg" data-full="img/full/adventure/1.jpg" alt="">
+      </div>
+      <div class="thumbs">
+        <img src="img/thumbs/adventure/1.jpg" data-full="img/full/adventure/2.jpg" alt="">
+        <img src="img/thumbs/adventure/2.jpg" data-full="img/full/adventure/2.jpg" alt="">
+        <img src="img/thumbs/adventure/3.jpg" data-full="img/full/adventure/3.jpg" alt="">
+        <img src="img/thumbs/adventure/4.jpg" data-full="img/full/adventure/4.jpg" alt="">
+        <img src="img/thumbs/adventure/5.jpg" data-full="img/full/adventure/5.jpg" alt="">
+        <img src="img/thumbs/adventure/6.jpg" data-full="img/full/adventure/6.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- CARS -->
+    <section class="category">
+      <h2>Авто</h2>
+      <div class="main-photo">
+        <img src="img/thumbs/cars/1.jpg" data-full="img/full/cars/1.jpg" alt="">
+      </div>
+      <div class="thumbs">
+        <img src="img/thumbs/cars/1.jpg" data-full="img/full/cars/2.jpg" alt="">
+        <img src="img/thumbs/cars/2.jpg" data-full="img/full/cars/2.jpg" alt="">
+        <img src="img/thumbs/cars/3.jpg" data-full="img/full/cars/3.jpg" alt="">
+        <img src="img/thumbs/cars/4.jpg" data-full="img/full/cars/4.jpg" alt="">
+        <img src="img/thumbs/cars/5.jpg" data-full="img/full/cars/5.jpg" alt="">
+        <img src="img/thumbs/cars/6.jpg" data-full="img/full/cars/6.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- STREET -->
+    <section class="category">
+      <h2>Стрит</h2>
+      <div class="main-photo">
+        <img src="img/thumbs/street/1.jpg" data-full="img/full/street/1.jpg" alt="">
+      </div>
+      <div class="thumbs">
+        <img src="img/thumbs/street/1.jpg" data-full="img/full/street/2.jpg" alt="">
+        <img src="img/thumbs/street/2.jpg" data-full="img/full/street/2.jpg" alt="">
+        <img src="img/thumbs/street/3.jpg" data-full="img/full/street/3.jpg" alt="">
+        <img src="img/thumbs/street/4.jpg" data-full="img/full/street/4.jpg" alt="">
+        <img src="img/thumbs/street/5.jpg" data-full="img/full/street/5.jpg" alt="">
+        <img src="img/thumbs/street/6.jpg" data-full="img/full/street/6.jpg" alt="">
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-photo">
+    <img src="img/thumbs/me.jpg" alt="">
+  </div>
+  <div class="about-text">
+    <h2>Обо мне</h2>
+    <p>
+      Я фотограф. Снимаю портреты, путешествия, автомобили и уличную фотографию.
+      Работаю в студии и на локациях.
+    </p>
+    <div class="contacts">
+      <a href="mailto:mail@example.com">mail@example.com</a>
+      <a href="https://t.me/aablagait" target="_blank">Telegram</a>
+      <a href="https://instagram.com/username" target="_blank">Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Имя Фамилия</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // 1. Клик по миниатюре -> меняем главное фото в своём блоке
+  let activeCategory = null;
+
+  document.querySelectorAll(".category").forEach(category => {
+    const mainImg = category.querySelector(".main-photo img");
+    const thumbs = Array.from(category.querySelectorAll(".thumbs img"));
+    let currentIndex = 0;
+
+    if (thumbs.length > 0) {
+      thumbs[0].classList.add("active");
+    }
+
+    function setActiveCategory() {
+      activeCategory = category;
+    }
+
+    function showImage(index) {
+      if (index < 0) index = thumbs.length - 1;
+      if (index >= thumbs.length) index = 0;
+
+      currentIndex = index;
+
+      thumbs.forEach(t => t.classList.remove("active"));
+      const thumb = thumbs[currentIndex];
+      thumb.classList.add("active");
+
+      mainImg.style.opacity = "0";
+
+      setTimeout(() => {
+        mainImg.src = thumb.src;
+        mainImg.dataset.full = thumb.dataset.full;
+        mainImg.style.opacity = "1";
+      }, 600);
+    }
+
+    thumbs.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => {
+        setActiveCategory();
+        showImage(index);
+      });
+    });
+
+    mainImg.addEventListener("click", () => {
+      setActiveCategory();
+    });
+
+    // свайпы
+    let startX = 0;
+    let endX = 0;
+
+    mainImg.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    mainImg.addEventListener("touchend", e => {
+      endX = e.changedTouches[0].clientX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      if (!activeCategory || activeCategory !== category) return;
+
+      const diff = startX - endX;
+      if (Math.abs(diff) < 50) return;
+
+      if (diff > 0) {
+        showImage(currentIndex + 1);
+      } else {
+        showImage(currentIndex - 1);
+      }
+    }
+
+    // клавиатура
+    document.addEventListener("keydown", e => {
+      if (!activeCategory || activeCategory !== category) return;
+
+      if (e.key === "ArrowRight") {
+        showImage(currentIndex + 1);
+      }
+
+      if (e.key === "ArrowLeft") {
+        showImage(currentIndex - 1);
+      }
+    });
+  });
+
+
+  // 2. Клик по главному фото -> открываем fullscreen
+  document.querySelectorAll(".main-photo img").forEach(img => {
+    img.addEventListener("click", () => {
+      const fullSrc = img.dataset.full;
+      lightboxImg.src = fullSrc;
+      lightbox.classList.add("active");
+    });
+  });
+
+  // 3. Закрытие fullscreen по клику
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+    lightboxImg.src = "";
+  });
+
+  const heroImages = document.querySelectorAll(".hero-image");
+  const prevBtn = document.querySelector(".hero-prev");
+  const nextBtn = document.querySelector(".hero-next");
+  const counter = document.querySelector(".hero-counter");
+
+  let heroIndex = 0;
+  let heroTimer = null;
+
+  function updateCounter() {
+    counter.textContent = `${heroIndex + 1} / ${heroImages.length}`;
+  }
+
+  function showHero(index) {
+    heroImages.forEach(img => img.classList.remove("active"));
+
+    if (index < 0) index = heroImages.length - 1;
+    if (index >= heroImages.length) index = 0;
+
+    heroIndex = index;
+    heroImages[heroIndex].classList.add("active");
+    updateCounter();
+  }
+
+  function nextHero() {
+    showHero(heroIndex + 1);
+  }
+
+  function prevHero() {
+    showHero(heroIndex - 1);
+  }
+
+  function startHeroAuto() {
+    heroTimer = setInterval(nextHero, 5000);
+  }
+
+  function resetHeroAuto() {
+    clearInterval(heroTimer);
+    startHeroAuto();
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextHero();
+    resetHeroAuto();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevHero();
+    resetHeroAuto();
+  });
+
+  showHero(0);
+  startHeroAuto();
+
+</script>
+
+
+</body>
+</html>
