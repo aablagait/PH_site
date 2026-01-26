@@ -19,6 +19,10 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "index.html css img favicon.ico"
+          source: |
+            index.html
+            css
+            img
+            favicon.ico
           target: "/var/www/portfolio"
           rm: true
