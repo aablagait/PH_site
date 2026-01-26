@@ -13,16 +13,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Copy files to server
+      - name: Check root files
+        run: |
+          echo "Root files:"
+          ls -la
+          [ -f "index.html" ] && echo "✓ index.html exists" || echo "✗ index.html NOT found"
+
+      - name: Deploy files
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: |
-            PH_site/index.html
-            PH_site/css
-            PH_site/img
-            PH_site/favicon.ico
+            index.html
+            css/
+            img/
+            favicon.ico
           target: "/var/www/portfolio"
           rm: true
