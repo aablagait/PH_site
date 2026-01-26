@@ -20,9 +20,9 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: |
-            index.html
-            css
-            img
-            favicon.ico
+            PH_site/index.html
+            PH_site/css
+            PH_site/img
+            PH_site/favicon.ico
           target: "/var/www/portfolio"
           rm: true
