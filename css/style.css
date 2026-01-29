@@ -263,6 +263,18 @@ body {
   max-height: 90%;
 }
 
+.lightbox-counter {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.85);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  z-index: 1001;
+}
+
+
 /* ================= ADAPTIVE ================= */
 
 @media (max-width: 1024px) {
