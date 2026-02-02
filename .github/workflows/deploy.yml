@@ -27,6 +27,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           debug: true
-          source: "index.html,css,img,favicon.ico"
+          source: "index.html,css,img,js,favicon.ico"
           target: "/var/www/portfolio"
           rm: true
